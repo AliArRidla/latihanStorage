@@ -13,7 +13,7 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class InternalActivity extends AppCompatActivity implements View.OnClickListener {
+public class PenyimpananInternal extends AppCompatActivity implements View.OnClickListener {
 
     public static final String FILENAME = "namafile.txt";
     Button buatFile, ubahFile, bacaFile, deleteFile;
@@ -22,7 +22,7 @@ public class InternalActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_internal);
+        setContentView(R.layout.activity_penyimpanan_internal);
         buatFile = findViewById(R.id.buttonBuatFile);
         ubahFile = findViewById(R.id.buttonUbahFile);
         bacaFile = findViewById(R.id.buttonBacaFile);
@@ -120,6 +120,5 @@ public class InternalActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         jalanakanPerintah(view.getId());
     }
-
 
 }
