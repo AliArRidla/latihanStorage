@@ -9,8 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity  {
 
-    Button penyimpananInternal;
-    Button peyimpananExternal;
+    Button penyimpananInternal,penyimpananExternal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,5 +23,15 @@ public class MainActivity extends AppCompatActivity  {
                 startActivity(intent);
             }
         });
+
+        penyimpananExternal = findViewById(R.id.externalStorage);
+        penyimpananExternal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,PenyimpananExternal.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }
